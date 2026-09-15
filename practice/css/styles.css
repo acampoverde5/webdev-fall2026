@@ -1,0 +1,19 @@
+#players {
+     color:blue;
+     background-color: darkgrey;
+     border-block-style:dotted;
+     border-block-color: pink;
+
+}
+
+#positions {
+    color:cornflowerblue;
+    background-color: black;
+}
+
+.goat{
+    font-weight: 400;
+    font-size: xx-large;
+    color:rgb(239, 206, 42)
+
+}
