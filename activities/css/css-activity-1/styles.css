@@ -1,6 +1,6 @@
 .odd{
     background-color: #ffcccc;
-    font-family: Verdana,"DejaVu Sans", sans-serif
+    font-family: Verdana,"DejaVu Sans", sans-serif;
 }
 
 #two{
@@ -16,4 +16,10 @@
     background-color: #ccffcc;
     font-size: 24px;
     font-weight: bold;
+}
+
+body{
+    background-color: rgb(255, 165, 140);
+    background-image:url("https://i.redd.it/1rafyurk0c4h1.gif");
+    background-size: cover;
 }
