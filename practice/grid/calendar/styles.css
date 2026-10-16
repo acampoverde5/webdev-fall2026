@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    border: rgb(253, 253, 253) 3px solid;
+}
+
+.item {
+    background-color: rgb(238, 244, 245);
+    text-align: left;
+}
+
+.day {
+    background-color: rgb(252, 255, 255);
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr);
+}
+.grid-container {
+    display: grid;
+    height: 300px;
+    height: 100vh;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.3fr 2fr 2fr 2fr 2fr 2fr;;
+    gap: 5px;
+    border-radius: 100px;
+}
