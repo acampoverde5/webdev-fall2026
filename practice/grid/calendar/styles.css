@@ -18,7 +18,18 @@ body {
     height: 300px;
     height: 100vh;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 0.3fr 2fr 2fr 2fr 2fr 2fr;;
+    grid-template-rows:  1fr 0.3fr 2fr 2fr 2fr 2fr 2fr;;
     gap: 5px;
     border-radius: 100px;
+}
+
+#up {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.empty {
+    grid-column: span 4;
 }

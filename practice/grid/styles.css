@@ -10,14 +10,24 @@ body {
 
 .grid-container {
     border: rgb(255, 238, 0) 3px solid;
+    box-sizing: border-box;
     display: grid;
-    height: 300px;
     height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 4fr 4fr 1fr;
 }
 
-.image {
-    margin: 100px;
+#unique {
+    grid-column: 2/ span 2;
+    grid-row: 2/ span 2;
+}
+
+#up {
+    grid-column: 1/ span 3;
+    grid-row: 1/ span 1;
+}
+
+#down {
+    grid-column: 1/ span 3;
+    grid-row: 4/ span 1;
 }
