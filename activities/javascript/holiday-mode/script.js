@@ -23,9 +23,9 @@ function changeTheme() {
         title.style.color = "lightgreen";
         heading.style.color = "darkgreen";
         footer.style.backgroundColor = "green";
-        menu.style.backgroundColor = "lightgreen";
+        menu.style.backgroundColor = "lightblue";
         text.style.color = "black";
-        footer.style.color = "lightgreen";
+        footer.style.color = "lightblue";
 
         title.textContent = "Welcome to the Saint Patrick's Day Bakery!";
         heading.textContent = "Happy Saint Patrick's Day!";
