@@ -15,27 +15,36 @@ function changeTheme() {
     const menu = document.getElementById('menu-box');
     const text = document.getElementById('welcome-text');
 
+    const normalMusic = new Audio("Normal.mp3");
+    const turkeyMusic = new Audio("Patrick.mp3");
+
 // STEP 4: if holiday mode wasn't on, turn it on
 
     if (isHolidayMode === false) {
+        normalMusic.pause();
+        turkeyMusic.play();
         document.body.style.backgroundColor = "lightgreen";
         header.style.backgroundColor = "green";
         title.style.color = "lightgreen";
         heading.style.color = "darkgreen";
         footer.style.backgroundColor = "green";
         menu.style.backgroundColor = "lightblue";
-        text.style.color = "black";
-        footer.style.color = "lightblue";
+        text.style.color = "lightgreen";
+        footer.style.color = "lightgreen";
 
         title.textContent = "Welcome to the Saint Patrick's Day Bakery!";
         heading.textContent = "Happy Saint Patrick's Day!";
         button.textContent = "Normal Mode";
+        document.body.style.backgroundImage = "linear-gradient(to right, darkgreen, lightgreen, darkgreen)";
+        
 
         isHolidayMode = true;
-    }
+        }
      
 // STEP 5: if holiday mode was on, turn it off
     else {
+        turkeyMusic.play();
+        normalMusic.pause();
         document.body.style.backgroundColor = "";
         header.style.backgroundColor = "";
         title.style.color = "";
@@ -48,6 +57,8 @@ function changeTheme() {
         title.textContent = "Sunny Side Bakery";
         heading.textContent = "Welcome!";
         button.textContent = "Holiday Mode";
+        document.body.style.backgroundImage = "";
+
         isHolidayMode = false;
     }
 }
